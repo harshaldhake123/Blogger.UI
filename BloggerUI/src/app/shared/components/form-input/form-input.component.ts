@@ -4,12 +4,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 @Component({
-  selector: 'app-form-input',
-  standalone: true,
-  imports: [CommonModule, MatFormFieldModule, MatInputModule],
-  templateUrl: './form-input.component.html',
-  styleUrl: './form-input.component.scss'
+    selector: 'app-form-input',
+    standalone: true,
+    imports: [CommonModule, MatFormFieldModule, MatInputModule],
+    templateUrl: './form-input.component.html',
+    styleUrl: './form-input.component.scss',
 })
-export class FormInputComponent {
-
-}
+export class FormInputComponent {}
