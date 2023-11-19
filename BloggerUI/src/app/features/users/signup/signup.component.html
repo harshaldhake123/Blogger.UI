@@ -1,1 +1,16 @@
-<p>signup works!</p>
+<div [formGroup]="signUpForm">
+    <app-form-input
+        type="email"
+        label="E-mail"
+        placeholder="Eg.john.smith@example.com"
+        inputFormControlName="email"
+        [inputFormGroup]="signUpForm"
+    />
+    <app-form-input
+        type="password"
+        label="Password"
+        placeholder="Enter a strong password"
+        inputFormControlName="password"
+        [inputFormGroup]="signUpForm"
+    />
+</div>

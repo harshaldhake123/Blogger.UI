@@ -1,11 +1,20 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-signup',
-    standalone: true,
-    imports: [CommonModule],
     templateUrl: './signup.component.html',
     styleUrl: './signup.component.scss',
 })
-export class SignupComponent {}
+export class SignupComponent {
+    public signUpForm: FormGroup;
+
+    constructor(private formBuilder: FormBuilder) {
+        this.signUpForm = this.formBuilder.group({
+            firstName: [Validators.required],
+            lastName: [Validators.required],
+            email: [Validators.required],
+            password: [Validators.required],
+        });
+    }
+}
