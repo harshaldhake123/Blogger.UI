@@ -1,5 +1,19 @@
 <div [formGroup]="signUpForm">
     <app-form-input
+        type="text"
+        label="First name"
+        placeholder="Eg. John"
+        inputFormControlName="firstName"
+        [inputFormGroup]="signUpForm"
+    />
+    <app-form-input
+        type="text"
+        label="Last name"
+        placeholder="Eg. Smith"
+        inputFormControlName="lastName"
+        [inputFormGroup]="signUpForm"
+    />
+    <app-form-input
         type="email"
         label="E-mail"
         placeholder="Eg.john.smith@example.com"
